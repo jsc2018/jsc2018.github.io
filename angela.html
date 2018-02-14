@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>JSC Conference 2018</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style3.css">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="glyphicon glyphicon-arrow-left"></i>
+                </div>
+
+                <div class="sidebar-header">
+                    <h3>Our Speakers</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                  <li class="active">
+                      <a href="index.html">Home</a>
+
+                  </li>
+                    <li><a href="Kspeakers.html">AP Angus Cameron</a></li>
+                    <li><a href="mario.html">Prof. Mario Estavillo </a></li>
+                    <li><a href="chew.html">AP Chew Hooi Pin</a></li>
+                    <li><a href="angela.html">Dr. Maria Angela</a></li>
+                    <li><a href="rapeah.html">Dr. Rapeah Mohd Yassin</a></li>
+                    <li><a href="salleh.html">Dr. Salleh Zakaria</a></li>
+                    <li><a href="wendell.html">Dr. Wendell Evans</a></li>
+                    <li><a href="khairil.html">Dr. Khairil Aznan </a></li>
+                    <li><a href="gunaseelan.html">Prof. Gunaseelan Rajan</a></li>
+                    <li><a href="khoo.html">Prof. Khoo Suan Phaik</a></li>
+                    <li><a href="sharifah.html">Brig Gen (Dr) Sharifah Azlin</a></li>
+                    <li><a href="goh.html">Dr Goh Pik Pin</a></li>
+                    <li><a href="yoshihiro.html">Prof. Yoshihiro Tsukiyama </a></li>
+                    <li><a href="sharon.html">Dr. Sharon Kaur</a></li>
+                    <li><a href="mohamad.html">Dato’ Dr. Wan Mohamad Nasir </a></li>
+
+                </ul>
+
+
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>More Speakers</span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="welcome.html">Welcome Message</a></li>
+                                <li><a href="assets/images/schedule/SProgram_Accepted01.pdf">Scientific Programmes</a></li>
+                                <li><a href="committee.html">About us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <figure>
+                    <img alt="" class="img-responsive left-block" width="20%" src="assets/images/speakers/angela.png">
+                </figure>
+                <h2>Dr. Maria Angela Garcia Gonzalez</h2>
+                <i>Senior Lecturer, Department of Restorative Dentistry, Faculty of Dentistry, University of Malaya</i>
+                <p><br>Dr. Gonzalez graduated with a DDM from of the University of the Philippines where she also received her MPH. She received her MSD in Operative Dentistry with a minor in Dental Materials from the Indiana University, USA.  Currently, she is involved in the teaching of Operative Dentistry and Dental Materials at the Department of Restorative Dentistry, University of Malaya (UM). She was also involved in the Calibration for the National Oral Health Survey (2006) and acted as an evaluator for an intervention school based tooth brushing program in the Philippines.  Her research interests include dental education and restorative material properties and performance.  She is presently Coordinator of the Dental Education Research Group in UM. Dr. Gonzalez is one of the partners of a group managing three dental clinics in Metro Manila.
+                </p>
+
+                <div class="line"></div>
+
+                <h3>Dental Caries: Yesterday, Today and Tomorrow </h3>
+                <p><br>Dental caries prevalence worldwide has changed through the years and has shown a decline in developed countries. However, in underdeveloped countries, dental caries prevalence remains high. Dental cares is present in all age groups in developed and underdeveloped countries. Public health and preventive measures in both community and private practice levels have helped contribute to this.  The disparity in dental caries prevalence can be attributed to lack of access to these measures. Untreated dentine caries will remain a global problem. There are many factors that contribute to caries levels of a population. Changing lifestyle, fermentable sugars in purportedly healthy food and the generational characteristics of the population are some of the factors that will affect the caries incidence. More accurate diagnostic tools, caries classification and individual risk assessment will provide more information on patients’ needs.  Treatment choices of the past will contribute to future caries susceptibility of patients. The private practitioner need to provide for individual caries risk assessment, early detection and management of early caries as well as its restorative treatment of advanced lesions.
+                </p>
+
+
+        </div>
+
+
+
+        <div class="overlay"></div>
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+    </body>
+</html>
